@@ -1,0 +1,152 @@
+.header_home-main {
+  padding-bottom: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 2s;
+  background-color: #ffffff;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header_top::after {
+  display: block;
+  width: 100%;
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  height: 1px;
+  background-color: rgb(231, 226, 226);
+}
+
+.header_top-left {
+  display: flex;
+  margin-right: 100px;
+}
+
+.header_top-left i {
+  margin-right: 10px;
+}
+
+.header_top-middle div {
+  width: 100px;
+}
+
+.header_top-middle div img {
+  width: 100%;
+}
+
+.header_top-right {
+  display: flex;
+}
+
+.header_top-right > div {
+  padding: 0 20px;
+}
+
+.header_bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.header_bot .Category {
+  position: relative;
+  cursor: pointer;
+}
+
+.header_bot .Category > p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background-color: rgb(218, 73, 73);
+  transition: width 0.5s ease;
+}
+
+.header_bot .Category > p:hover::after {
+  width: 100%;
+}
+
+.header_bot div p {
+  text-decoration: none;
+  color: black;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.header_bot .search {
+  width: 300px;
+}
+
+.header_bot .search input {
+  border: none;
+  outline: none;
+  border: 1px solid #333;
+  padding: 8px;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.header_bot {
+  position: relative;
+}
+
+.Category > div {
+  position: fixed;
+  top: 110px;
+  left: 100px;
+  background-color: white;
+  width: 890px;
+  height: 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: 15px 10px 44px 8px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Category p:hover ~ div,
+.Category div:hover {
+  visibility: inherit;
+  opacity: 1;
+  height: 400px;
+}
+
+.Category > div > ul > a:hover {
+
+  color: rgb(218, 73, 73);
+  ;
+}
+
+.Category > div > ul > a > li {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.Category > div > ul > li:nth-child(1) {
+  font-weight: bold;
+  font-size: 13px;
+}

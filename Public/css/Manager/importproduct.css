@@ -1,0 +1,288 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.app {
+    margin-bottom: 10px;
+}
+
+.main {
+    display: flex;
+
+}
+
+.logo {
+    width: 160px;
+
+
+}
+
+.logo img {
+    width: 100%;
+}
+
+.left {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    width: 880px;
+}
+
+.header {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header div:nth-child(1) p {
+    font-size: 2rem;
+}
+
+.header div:nth-child(2) {
+    margin-left: 10px;
+}
+
+.header div:nth-child(2) input {
+    border: none;
+    outline: none;
+    border: 1px solid #97A1AA;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.product {
+    display: flex;
+    gap: 10px;
+    overflow-y: auto;
+    height: 552px;
+    scrollbar-width: thin;
+}
+
+.item {
+    width: 200px;
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+    border-radius: 8px;
+    max-height: 300px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-img {
+    background-color: gray;
+    height: 120px;
+    width: 100%;
+    /* height: 150px; */
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    /* height: 100%; */
+}
+
+.item .name {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.item .price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.item .add {
+    width: 100%;
+    text-align: center;
+}
+
+.item .add button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #2D4356;
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+}
+
+.item .add button:hover {
+    background-color: #425362;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.size-selector {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.size-button {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    padding: 2px 3px;
+    font-size: 10px;
+    cursor: pointer;
+    border: 1px solid #F6F6F6;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="radio"]:checked + label {
+    border: 1px solid #97A1AA;
+}
+
+.right {
+    margin-left: 30px;
+    /* border: 1px solid red; */
+    width: 30%;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.right input[type="text"] {
+    outline: none;
+    border: none;
+    padding: 6px 8px;
+    font-size: 1.2rem;
+    border: 1px solid #97A1AA;
+    border-radius: 6px;
+    width: 100%;
+}
+
+
+.detail_item {
+    display: flex;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 10px 20px;
+    align-items: center;
+    margin-bottom: 10px;
+
+
+}
+
+.detail_item .img {
+    width: 90px;
+    height: 90px;
+    /* background-color: #425362; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.detail_item div img {
+    width: 100%;
+
+}
+
+.detail_item-price {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.detail_item-price input {
+    outline: none;
+    border: none;
+    padding: 6px 8px;
+    border: 1px solid #97A1AA;
+    font-size: 1.2rem;
+    border-radius: 6px;
+
+
+}
+
+.Summary {
+    background-color: #EAECEE;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.Summary_detail div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Price {
+    position: relative;
+    margin-top: 10px;
+}
+
+.Price::before {
+    position: absolute;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px dashed #2D4356;
+}
+
+.Summary_detail div p {
+    color: #B7B8B9;
+    font-size: 1.2rem;
+}
+
+.Summary_detail div p:nth-child(1) {
+    font-weight: bold;
+}
+
+.Summary_detail div p:nth-child(2) {
+    font-weight: bold;
+    color: black;
+}
+
+
+.pay {
+    margin-top: 10px;
+}
+
+.Pay div:nth-child(2) {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+
+}
+
+.Pay div button {
+    width: 70px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+
+}
+
+.submit {
+    margin: 10px;
+
+}
+
+.submit button {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #2D4356;
+    color: #F6F6F6;
+}

@@ -1,0 +1,107 @@
+.detail {
+  display: flex;
+  justify-content: center;
+}
+
+.detail_left {
+  display: flex;
+}
+
+.detail_left-listImage > div {
+  width: 90px;
+  border: 1px solid #333;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.detail_left-listImage > div > img,
+.detail_left-image > div > img {
+  width: 100%;
+}
+
+
+.detail_left-image > div {
+  width: 400px;
+  background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+}
+
+.detail_left-image > div > img {
+  object-fit: contain;
+  background-size: cover;
+}
+
+.detail_right {
+  width: 500px;
+  margin-left: 30px;
+}
+
+.detail_right div {
+  margin-bottom: 5px;
+}
+
+.detail_right div p {
+  font-size: 14px;
+  color: #4c4c4c;
+}
+
+.detail_right h5 {
+  font-size: 18px;
+}
+
+.detail_right .Add-to-card {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #ad2a36;
+  width: 100%;
+  padding: 5px 14px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.detail_right .Add-to-card p {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.detail_right ul li {
+  color: #4c4c4c;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  margin: 4px 0;
+}
+
+.detail_right ul li i {
+  margin-right: 5px;
+}
+
+.detail_right .size input[type="radio"] {
+  display: none;
+}
+
+.detail_right .size label span {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.detail_right .size input[type="radio"]:checked + label span {
+  background-color: #003468;
+  color: #fff;
+  border-color: #003468;
+  font-weight: 600;
+}

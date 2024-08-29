@@ -1,0 +1,10 @@
+.itemAddProduct {
+    background-color: rgb(224, 212, 212);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+
+}

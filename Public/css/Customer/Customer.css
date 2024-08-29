@@ -1,0 +1,85 @@
+.nav_Customer {
+    padding-left: 60px;
+    box-shadow: 1px 0px 3px rgba(161, 157, 157, 0.5);
+}
+
+.Customer_header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.Customer_header::after {
+    display: block;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 0.5px;
+    background-color: rgb(231, 226, 226);
+}
+
+.Customer_header .img {
+    width: 40px;
+
+}
+
+.nav_Customer h3 {
+    font-size: 26px;
+    color: #003468F7;
+    font-weight: 400;
+    font-family: Robotoregular, sans-serif;
+}
+
+.Customer_header .img img {
+    width: 100%;
+
+}
+
+.nav_Customer ul li {
+    padding: 8px 0;
+}
+
+.nav_Customer ul li a {
+    font-size: 13px;
+    color: #64748B;
+    font-family: Robotoregular, sans-serif;
+
+}
+
+.nav_Customer ul li a:hover {
+    transition: 0.5s;
+    color: black;
+}
+
+.customer_header-right {
+    height: 50px;
+    border-bottom: 0.5px solid rgb(231, 226, 226);
+}
+
+.customer .header-right {
+    padding-left: 0;
+}
+
+.customer .customer_header-right div {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    align-items: center;
+    height: 100%;
+}
+
+.customer .customer_header-right div span {
+    padding: 0px 20px;
+    font-size: 16px;
+}
+
+.customer .customer_header-right div span p {
+    margin-bottom: 0;
+}
+
+.customer_main {
+    padding: 20px 24px 32px;
+}

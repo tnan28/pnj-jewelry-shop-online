@@ -1,0 +1,27 @@
+.filter select {
+  outline: none;
+  border: 1px solid #ededed;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.filter select option {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.homePage-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homePage-top input {
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 8px;
+  background-color: blue;
+}

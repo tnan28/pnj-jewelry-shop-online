@@ -1,0 +1,128 @@
+#CreateOrder form {
+    display: flex;
+}
+
+#CreateOrder form .info {
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-right: 30px;
+}
+
+#CreateOrder form .info div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    align-items: center;
+    width: 300px;
+}
+
+#CreateOrder form .info label {
+    font-size: 1.2rem;
+}
+
+#CreateOrder form .info input {
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+}
+
+#CreateOrder table {
+    width: 800px;
+}
+
+#CreateOrder table input {
+    border: none;
+    outline: none;
+
+}
+
+.text_product {
+    width: 200px;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#CreateOrder table input[type=number] {
+    width: 40px;
+}
+
+.CreateOrder_Details th {
+    font-size: 1.4rem;
+}
+
+.CreateOrder_Details .search {
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    border: 1px solid gainsboro;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.CreateOrder_Details .searchProduct {
+    width: 300px;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    border: 1px solid gainsboro;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+
+.CreateOrder_Details .searchProduct_Result {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(226, 221, 221);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: fixed;
+    display: none;
+}
+
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    grid-area: 1/1;
+    --c: no-repeat radial-gradient(farthest-side, #25b09b 92%, #0000);
+    background:
+        var(--c) 50% 0,
+        var(--c) 50% 100%,
+        var(--c) 100% 50%,
+        var(--c) 0 50%;
+    background-size: 12px 12px;
+    animation: l12 1s infinite;
+}
+
+.loader::before {
+    margin: 4px;
+    filter: hue-rotate(45deg);
+    background-size: 8px 8px;
+    animation-timing-function: linear
+}
+
+@keyframes l12 {
+    100% {
+        transform: rotate(.5turn)
+    }
+}
+
+.ProductsSearch {
+    display: flex;
+    justify-content: space-between;
+}
